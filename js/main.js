@@ -23,8 +23,8 @@ function firstQuestion(){
         title: CONFIG.introTitle,
         text: CONFIG.introDesc,
         imageUrl: 'img/thang.jpg',
-        imageWidth: 300,
-        imageHeight: 300,
+        imageWidth: 400,
+        imageHeight: 400,
         background: '#fff url("img/iput-bg.jpg")',
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
@@ -96,19 +96,17 @@ function textGenerate() {
 
 // show popup
 $('#yes').click(function() {
-    var audio = new Audio('sound/tick.mp3');
-    audio.play();
     Swal.fire({
         title: CONFIG.question,
         html: true,
         width: 900,
         padding: '3em',
-        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
-        background: '#fff url("img/iput-bg.jpg")',
+        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Vì sao vại :333'>",
+        background: '#FFC0CB url("img/iput-bg.jpg")',
         backdrop: `
               rgba(0,0,123,0.4)
               url("img/giphy2.gif")
-              left top
+              center bottom
               no-repeat
             `,
         confirmButtonColor: '#3085d6',
